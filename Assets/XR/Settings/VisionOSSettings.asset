@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87fdc71f48fec416ba6b375d53aba3b8, type: 3}
   m_Name: VisionOSSettings
   m_EditorClassIdentifier: 
-  m_AppMode: 1
-  m_HandsTrackingUsageDescription: "\u624B\u3092\u4F7F\u3044\u307E\u3059"
-  m_WorldSensingUsageDescription: "\u7A7A\u9593\u3092\u4F7F\u3044\u307E\u3059"
+  m_AppMode: 0
+  m_HandsTrackingUsageDescription: Use Hand
+  m_WorldSensingUsageDescription: Use Space
   m_RuntimeSettings: {fileID: 11400000, guid: ac517bd71f33e472fa5c25448bc7a703, type: 2}
   m_UpperLimbVisibility: 0
   m_FoveatedRendering: 1
