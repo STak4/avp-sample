@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &745895274391129937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2249962699515779220}
+  - component: {fileID: 4865607351192686717}
+  - component: {fileID: 899077324503155699}
+  m_Layer: 0
+  m_Name: SwiftManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2249962699515779220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745895274391129937}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4865607351192686717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745895274391129937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e70c10ec4cdc7420690fb4b0e1d48808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ObjectsToSpawn:
+  - {fileID: 5104632616293341028, guid: 448fb6bb7dfb145b3b65d7b283bb1489, type: 3}
+  - {fileID: 8910986620328105834, guid: 9ad21e21bb6d5401696e2763a9f40060, type: 3}
+  m_ObjectMaterials:
+  - {fileID: 2100000, guid: bcb4a7cba40a846a6b274d060aa1a02b, type: 2}
+  - {fileID: 2100000, guid: 982106327544244338dba645c3ec3523, type: 2}
+  - {fileID: 2100000, guid: 97d308b4cfed045bc8230e75cf474874, type: 2}
+  m_SpawnPosition: {fileID: 0}
+  m_MeshManager: {fileID: 0}
+  m_OcclusionMaterial: {fileID: 2100000, guid: 35f3dba18639d4942b245d6eff9322db, type: 2}
+  m_WireFrameMaterial: {fileID: 2100000, guid: e86f2256a9b7344ef807249385310f25, type: 2}
+  m_TextureMaterial: {fileID: 2100000, guid: 02fd697d8b4c34f92b0856c22bba880d, type: 2}
+  m_LoadLevelButton: {fileID: 0}
+  m_MaxSpawnedObjects: 150
+--- !u!114 &899077324503155699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745895274391129937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f369c468cec14208b72ee3456e04596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ColliderPrefab: {fileID: 6148953324968704746, guid: b53abf2e086174f5faa92fb58ab25030, type: 3}
