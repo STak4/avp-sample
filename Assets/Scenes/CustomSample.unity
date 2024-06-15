@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.18028373, g: 0.22571398, b: 0.30692294, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1684,51 +1685,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 235, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &339371872
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 339371874}
-  - component: {fileID: 339371873}
-  m_Layer: 0
-  m_Name: Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &339371873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339371872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b75659ca994f6498faf629f5af310336, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Touch: {fileID: -7956929315595962687, guid: 660d0bc49ad5feb4e83f78a97d15b9fc, type: 3}
---- !u!4 &339371874
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339371872}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &394986593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,12 +1885,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!114 &478924472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2845,6 +2801,10 @@ PrefabInstance:
     - target: {fileID: 3603274325315733027, guid: 3d27f5ae4a1d349f998a6739bfded667, type: 3}
       propertyPath: m_Name
       value: XRInteractionManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603274325315733027, guid: 3d27f5ae4a1d349f998a6739bfded667, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4398049222418774078, guid: 3d27f5ae4a1d349f998a6739bfded667, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3989,7 +3949,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1234296268}
   - component: {fileID: 1234296267}
-  - component: {fileID: 1234296266}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -3997,20 +3956,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1234296266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1234296265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 017c5e3933235514c9520e1dace2a4b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ActionAssets:
-  - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &1234296267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4585,6 +4530,10 @@ PrefabInstance:
     - target: {fileID: 745895274391129937, guid: a7c97adec20964eaa80eef4bfd7372eb, type: 3}
       propertyPath: m_Name
       value: SwiftManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 745895274391129937, guid: a7c97adec20964eaa80eef4bfd7372eb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2249962699515779220, guid: a7c97adec20964eaa80eef4bfd7372eb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6388,7 +6337,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026256746}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b0e24161653434389cbc153211c7545, type: 3}
   m_Name: 
@@ -8907,7 +8856,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 7983912798421379155}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.5856353
+  m_Size: 0.58563536
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9949,7 +9898,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8278935860002820668}
   m_HandleRect: {fileID: 8091733120426920452}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -10010,7 +9959,6 @@ SceneRoots:
   - {fileID: 870431989}
   - {fileID: 17822209}
   - {fileID: 1532125738}
-  - {fileID: 339371874}
   - {fileID: 2026256748}
   - {fileID: 1339536299}
   - {fileID: 938526395}
