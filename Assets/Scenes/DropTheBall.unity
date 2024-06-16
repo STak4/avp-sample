@@ -2369,6 +2369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 491009566}
   - component: {fileID: 491009565}
+  - component: {fileID: 491009567}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2392,10 +2393,34 @@ MonoBehaviour:
   autoResetInterval: 10
   OnCleared:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 491009567}
+        m_TargetAssemblyTypeName: STak4.AnimatorTrigger, Assembly-CSharp
+        m_MethodName: OnClear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnReset:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 491009567}
+        m_TargetAssemblyTypeName: STak4.AnimatorTrigger, Assembly-CSharp
+        m_MethodName: OnReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &491009566
 Transform:
   m_ObjectHideFlags: 0
@@ -2411,6 +2436,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &491009567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491009564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2afad9d27c43c4a8ca2b6b2f0f189843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetMaterial: {fileID: 2100000, guid: 2a4044e0c1e744fcd8e2faf4d528949a, type: 2}
+  TransitionTime: 5
 --- !u!1 &498942618
 GameObject:
   m_ObjectHideFlags: 0
@@ -2933,7 +2972,6 @@ GameObject:
   - component: {fileID: 766856527}
   - component: {fileID: 766856526}
   - component: {fileID: 766856529}
-  - component: {fileID: 766856530}
   m_Layer: 0
   m_Name: LavaMesh
   m_TagString: Untagged
@@ -3048,18 +3086,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &766856530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 766856524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2afad9d27c43c4a8ca2b6b2f0f189843, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &832428919
 GameObject:
   m_ObjectHideFlags: 0
@@ -9394,6 +9420,7 @@ GameObject:
   - component: {fileID: 2342421673262314683}
   - component: {fileID: 6448210775686545957}
   - component: {fileID: 3205059226556227322}
+  - component: {fileID: 6448210775686545958}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -10853,6 +10880,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798775161168312913}
   m_Mesh: {fileID: -5495902117074765545, guid: 064a683246c904b5db9272fa7bd485c4, type: 3}
+--- !u!95 &6448210775686545958
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798775161168312913}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ef602358c725b4f6088ce4920657e72c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &6582085382105928304
 Transform:
   m_ObjectHideFlags: 0

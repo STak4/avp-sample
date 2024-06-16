@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,12 @@ namespace STak4
         public UnityEvent OnReset = new UnityEvent();
 
         private bool isProcessing = false;
+
+        private void Start()
+        {
+            Reset();
+        }
+
         public void Reset()
         {
             if(isProcessing) return;

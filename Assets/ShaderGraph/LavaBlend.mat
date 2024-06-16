@@ -130,7 +130,7 @@ Material:
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _AmbientOcclusion: 0.068
-    - _Blend: 0.875
+    - _Blend: 1.0008824
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
     - _ClearCoatMask: 0
