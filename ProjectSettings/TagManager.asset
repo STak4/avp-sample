@@ -15,9 +15,9 @@ TagManager:
   - PlacementObject
   - Placeable Surface
   - Spawner Contact
-  - 
-  - 
-  - 
+  - HoleMask
+  - Hole
+  - Obstacle
   - 
   - 
   - 

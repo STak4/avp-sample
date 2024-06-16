@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/DropTheBall.unity
+    guid: 5f3fb198426ba4e4eadd60d67a0cd0ed
+  - enabled: 1
     path: Assets/Scenes/CustomSample.unity
     guid: 9f38a0608eead482c8d6229c9eec0aff
   m_configObjects:
